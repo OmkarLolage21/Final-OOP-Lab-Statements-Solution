@@ -18,7 +18,7 @@ public class ArrayListOperations {
 
         System.out.println(list1);
 
-        int index = list1.indexOf("How");
+        int index = list1.indexOf("Are");
         System.out.println("Index of mentioned word: " + index);
 
         list1.remove(3);

@@ -104,7 +104,7 @@ public class StudentManagementSystem {
                     String name = scanner.nextLine();
                     System.out.print("Enter roll number: ");
                     int rollNumber = scanner.nextInt();
-                    scanner.nextLine(); // Consume newline
+                    scanner.nextLine(); 
                     System.out.print("Enter grade: ");
                     String grade = scanner.nextLine();
                     Student newStudent = new Student(name, rollNumber, grade);
@@ -122,7 +122,7 @@ public class StudentManagementSystem {
                 case 4:
                     System.out.print("Enter roll number of student to replace grade: ");
                     int rollToReplace = scanner.nextInt();
-                    scanner.nextLine(); // Consume newline
+                    scanner.nextLine();
                     System.out.print("Enter new grade: ");
                     String newGrade = scanner.nextLine();
                     studentManager.replaceGrade(rollToReplace, newGrade);

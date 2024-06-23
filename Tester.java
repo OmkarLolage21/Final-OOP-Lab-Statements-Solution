@@ -15,9 +15,9 @@ class Order{
         this.orderedFoods = orderedFoods;
         this.status = "Ordered";
     }
-    double calculateTotalPrice(int unitPrice){
+    void calculateTotalPrice(int unitPrice){
         totalPrice = unitPrice + unitPrice * 0.05;
-        return totalPrice;
+//        return totalPrice;
     }
     public void displayOrderDetails() {
         System.out.println("Order Details:");

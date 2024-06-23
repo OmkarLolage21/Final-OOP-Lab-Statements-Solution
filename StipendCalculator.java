@@ -3,7 +3,7 @@ import java.util.Scanner;
 class PostGraduateStudent {
     private int studentId;
     private double aggregateMarks;
-    private static final double BASE_STIPEND = 100;
+    private static final double BASE_STIPEND = 1000;
 
     public PostGraduateStudent(int studentId, double aggregateMarks) {
         this.studentId = studentId;
@@ -12,18 +12,6 @@ class PostGraduateStudent {
 
     public int getStudentId() {
         return studentId;
-    }
-
-    public void setStudentId(int studentId) {
-        this.studentId = studentId;
-    }
-
-    public double getAggregateMarks() {
-        return aggregateMarks;
-    }
-
-    public void setAggregateMarks(double aggregateMarks) {
-        this.aggregateMarks = aggregateMarks;
     }
 
     public double calculateTotalStipend() {
@@ -52,7 +40,7 @@ public class StipendCalculator {
         PostGraduateStudent student = new PostGraduateStudent(studentId, aggregateMarks);
         double totalStipend = student.calculateTotalStipend();
 
-        System.out.println("The final stipend of " + student.getStudentId() + " is $" + totalStipend);
+        System.out.println("The final stipend of " + student.getStudentId() + " is ₹" + totalStipend);
     }
 }
 //6
